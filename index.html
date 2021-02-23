@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-			#header{
-					z-index:1;
-					position:absolute;
-					width:100%;
-					height:100%;
-					top:-7px;
-					left:-15px;
-			}
-			#name{
-				z-index:2;
-				position:absolute;
-				font-size:7em;
-				font-family:"Cursive";
-				line-height:1em;
-				top:1em;
-				left:1.2em;
-			}
-			#discription{
-				z-index:2;
-				position:relative;
-				top:-130px;
-				left:0px;
-				font-size:0.26em;
-				font-family:"Perpetua",sans-sarif;
-				font-style:italic;
-			}
-			#topContact{
-				z-index:2;
-				position:absolute;
-				font-size:2em;
-				font-family:"Arial";
-				color:white;
-				right:2em;
-				top:2em;
-			}
-		</style>
+			<link rel="stylesheet" href="text.css">
 	</head>
+
 	<body>
 		<!-- header image -->
 		<div id="header">
-		<img src="header.png" alt="image" width=101.5% height=65% >
+			<img src="header.png" alt="image" width=101.5% height=65% >
 		</div>
 		
+		<!-- contacts at the top -->
+		<div id="topContact">
+			<p> mail<br>twitter<br>call</p>
+		</div>
+
 		<!-- Heading name and discription -->
 		<div id="name">
 			<p> G.Victor<br> Swaroop</p>
 			<div id="discription">
 				<p> UnderGrad in Electronics and Communication</p>
+				<br>
+				<hr align="center" size="2px" width="50%" noshade>
 			</div>
+
+			<!-- subheading (About) -->
+			<div class="subheadings">
+				<p>About</p>
+			</div>
+			<hr align="center" size="2px" width="10%" noshade>
+
+			<!-- content under (About) -->
+			<div class="textinfo">
+				<p>
+					hi i am victor swaroop and i am here to say hi...ha ha ;)
+				</p>
+				<br>
+			</div>
+
+			<br><br><br>
+
+			<!-- subheading (Skills) -->
+			<div class="subheadings">
+				<p>Skills</p>
+			</div>
+			<hr align="center" size="2px" width="10%" noshade>
+
 		</div>
-	
-		<!-- contacts at the top -->
-		<div id="topContact">
-			<p> mail<br>twitter<br>call</p>
-		</div>
-	
 	</body>
+
 </html>
