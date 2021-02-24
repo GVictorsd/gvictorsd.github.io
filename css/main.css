@@ -1,6 +1,4 @@
-			body{
-				background-color:pink;
-			}
+
 			#header{
 					z-index:1;
 					position:absolute;
@@ -42,13 +40,13 @@
 			.subheadings{
 				z-index:2;
 				position:relative;
-				font-size:0.7em;
+				font-size:0.6em;
 				text-align:center;
 				width:70%;
 				color:blue;
 				height:100%;
 				font-family:"perpetua";
-				left:2.1em;
+				left:3em;
 			}
 			.textinfo{
 				z-index:2;
@@ -57,4 +55,21 @@
 				width:100%;
 				font-family:"calibri";
 				text-align:center;
+			}
+
+			.card{
+				position:absolute;
+				background:white;
+				height:25%;
+				width:100%;
+				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+				transition: 0.3s;
+				border-radius: 20px;
+			}
+
+			.card:hover{
+				box-shadow: 0 200px 200px 0 rgba(0,0,0,0.2);
+			}
+			.container{
+				padding:20px 40px;
 			}
