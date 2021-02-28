@@ -26,17 +26,26 @@
 				z-index:2;
 				position:absolute;
 				font-family:"Cursive";
-				font-size:120px;
-				width:1500px;
+				font-size:150px;
+				width:1000px;
 				line-height:1em;
-				top:150px;
+				top:130px;
+				left:0.5em;
+			}
+			#content{
+				z-index:2;
+				position:relative;
+				font-family:"Cursive";
+				font-size:120px;
+				width:1000px;
+				line-height:1em;
+				top:1000px;
 				left:1.2em;
 			}
 			#discription{
 				z-index:2;
 				position:relative;
 				top:-130px;
-				left:0px;
 				font-size:0.26em;
 				font-family:"Perpetua",sans-sarif;
 				font-style:italic;
@@ -55,18 +64,16 @@
 				position:relative;
 				font-size:90px;
 				text-align:center;
-				width:400px;
+				width:100%;
 				color:blue;
 				height:140px;
 				font-family:"perpetua";
-				left:540px;
 			}
 			.textinfo{
 				z-index:2;
 				position:absolute;
 				font-size:30px;
-				width:1100px;
-				left:150px;
+				width:100%;
 				font-family:"calibri";
 				text-align:center;
 			}
@@ -74,31 +81,31 @@
 			.card{
 				position:absolute;
 				background:white;
-				height:700px;
-				width:1500px;
-				left:-50px;
+				height:600px;
+				width:1250px;
+				left:-100px;
 				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 				transition: 0.3s;
 				border-radius: 50px;
 			}
 
 			.card:hover{
-				box-shadow: 0 200px 200px 0 rgba(0,0,0,0.2);
+				box-shadow: 0 100px 100px 0 rgba(0,0,0,0.2);
 			}
 			.container1{
-				padding:20px 40px;
+				padding:10px 20px;
 				position:relative; 
-				width:900px;
+				width:50%;
 				top:-2em;
-				left:0.6em;
+				left:50px;
 			}
 			.container2{
 				padding:20px 40px;
 				position:relative; 
 				height:5em;
 				width:5em;
-				top:-6em;
-				left:6.5em;
+				top:-5.5em;
+				left:5em;
 			}
 
 
