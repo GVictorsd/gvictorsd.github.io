@@ -1,3 +1,18 @@
+			body{
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: column wrap;
+				flex-flow: column wrap;
+
+				overflow-x: hidden;
+				max-width: 100%;
+			}
+			@media screen and (max-width: 667px) {
+				body{
+					overflow-x: hidden;
+					max-width: 100%;
+				}
+			}
 
 			#header{
 					z-index:1;
@@ -10,8 +25,8 @@
 			#name{
 				z-index:2;
 				position:absolute;
-				font-size:120px;
 				font-family:"Cursive";
+				font-size:120px;
 				width:1500px;
 				line-height:1em;
 				top:150px;
@@ -61,7 +76,7 @@
 				background:white;
 				height:700px;
 				width:1500px;
-				left:-20px;
+				left:-50px;
 				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 				transition: 0.3s;
 				border-radius: 50px;
@@ -85,6 +100,7 @@
 				top:-6em;
 				left:6.5em;
 			}
+
 
 			.square{z-index:2;position:relative;
 				background:white; 
