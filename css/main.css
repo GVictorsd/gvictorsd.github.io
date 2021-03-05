@@ -22,6 +22,24 @@
 					user-select: none;
 					pointer-events:none;
 			}
+
+			.contactMe{
+				z-index:2;
+				position:absolute;
+				background:black;
+				height:75px;
+				width:200px;
+				left:1050px;
+				top:100px;
+				border-radius: 0px;
+			}
+			.hiimg{
+				position:relative;
+				border-radius:20px;
+				left:50px;
+				top:-70px; 
+			}
+
 			#name{
 				z-index:2;
 				position:absolute;
@@ -86,6 +104,17 @@
 				left:-100px;
 				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 				transition: 0.3s;
+				border-radius: 50px;
+			}
+
+			#contactMe{
+				z-index:2;
+				position:absolute;
+				background:white;
+				height:75px;
+				width:200px;
+				left:1050px;
+				top:100px;
 				border-radius: 50px;
 			}
 
