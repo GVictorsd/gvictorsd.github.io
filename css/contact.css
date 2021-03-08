@@ -1,0 +1,58 @@
+body{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+
+	overflow-x: hidden;
+	max-width: 100%;
+}
+@media screen and (max-width: 667px) {
+	body{
+		overflow-x: hidden;
+		max-width: 100%;
+	}
+}
+
+#header{
+	background-image: linear-gradient(to top right,#33CCFF, #FF00CC,#CC0099, #660099, #330066 );
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 1430px;
+	height: 300px;
+	border-radius: 0px 0px 0px 400px;
+	box-shadow: 0 30px 50px 0px rgba(0,0,0,0.2);
+}
+#github{
+	position: absolute;
+	top: 650px;
+	left: 200px;
+	transform:rotate(-20deg);
+	opacity:0.8;
+}
+
+
+#twitter{
+	position: absolute;
+	top: 1450px;
+	left: 200px;
+	transform:rotate(10deg);
+	opacity:0.8;
+
+}
+#linkedin{
+	position: absolute;
+	top:1000px;
+	left: 800px;
+	transform:rotate(-20deg);
+	opacity:0.8;
+
+}
+#gmail{
+	position: absolute;
+	top:400px;
+	left: 800px;
+	transform:rotate(20deg);
+	opacity:0.8;
+}
