@@ -1,3 +1,4 @@
+
 body{
 	display: -webkit-flex;
 	display: flex;
@@ -6,12 +7,25 @@ body{
 
 	overflow-x: hidden;
 	max-width: 100%;
+	background: #b3ffb3;
 }
 @media screen and (max-width: 667px) {
 	body{
 		overflow-x: hidden;
 		max-width: 100%;
 	}
+}
+
+a:link{
+	color:black;
+	text-decoration:none;
+}
+
+.icon{
+	transition: transform 1s;
+}
+.icon:hover{
+	transform: scale(1.2) rotate(10deg);
 }
 
 #header{
