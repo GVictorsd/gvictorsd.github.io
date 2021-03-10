@@ -1,0 +1,42 @@
+body{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+
+	overflow-x: hidden;
+	max-width: 100%;
+}
+@media screen and (max-width: 667px) {
+	body{
+		overflow-x: hidden;
+		max-width: 100%;
+	}
+}
+
+#topleft{
+	position:absolute;
+	top:5%;
+	left:0px;
+	width:75%;
+	height:10em;
+	background:#c051ff ;
+	border-radius:0px 200px 200px 0px;
+	box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
+}
+#topRight{
+		position:absolute; 
+		top:10%;
+		right:0px;
+		width:15%;
+		height:25em;
+		background: #7dff20;
+		border-radius:500px 0px 0px 500px;
+		box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
+}
+.text{
+	position:relative;
+	text-align:center;
+	font-size:30px;
+	font-family:"Calibri";
+}
