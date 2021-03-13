@@ -125,7 +125,23 @@
 				left:1050px;
 				top:100px;
 				border-radius: 50px;
+				animation-name:"contactanime";
+				animation-duration:3s;
+				animation-iteration-count:infinite;
 			}
+
+/*			@keyframes contactanime{
+				0% {
+				opacity:1;}
+				100%{
+					top:100%; 
+					right:100px;
+					width:150px;
+					height:150px; 
+					border-radius:100%;
+				}
+			}
+*/
 
 			.card:hover{
 				box-shadow: 0 100px 100px 0 rgba(0,0,0,0.2);

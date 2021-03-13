@@ -15,8 +15,8 @@ const message = document.querySelector('#message');
 
 document.addEventListener('scroll', function () {
     const messageText = isInViewport(contactMe) ?
-        'The box is visible in the viewport' :
-        'The box is not visible in the viewport';
+        '' :// it is visible...
+        ''; //not visible...
 
     message.textContent = messageText;
 
