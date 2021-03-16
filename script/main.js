@@ -11,8 +11,22 @@ function isInViewport(el) {
 
 
 const box = document.querySelector('#contactMe');
-const message = document.querySelector('#message');
+//const message = document.querySelector('#message');
+const elem = document.querySelector('#floating-contact');
 
+document.addEventListener('scroll', function () {
+    isInViewport(contactMe) ?
+		elem.style.visibility = 'hidden':// it is visible...
+        elem.style.visibility = 'visible'; //not visible...
+
+//    message.textContent = messageText;
+
+},{
+    passive: true
+});
+
+
+/*
 document.addEventListener('scroll', function () {
     const messageText = isInViewport(contactMe) ?
         '' :// it is visible...
@@ -23,3 +37,4 @@ document.addEventListener('scroll', function () {
 }, {
     passive: true
 });
+*/

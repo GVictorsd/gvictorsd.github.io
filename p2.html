@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 	<head>
 		<meta charset="UTF-8">
-		<title>BasicComputer</title>
+		<title>Basic Computer</title>
 		<link rel="stylesheet" href="css/p2.css">
 	</head>
 
 	<body>
-		<div id="topleft" >
-		</div>
+		<div id="topleft" ></div>
 
 		<div id="topRight" >
-			<h1 style="font-size:75px;color:white; text-align:center;"> Basic Computer</h1>
+			<h1 style="font-size:75px;
+				color:white;
+				text-align:center;"> Basic Computer</h1>
 		</div>
 
 		<p style="position:relative; top:250px; left:0px; text-align:center; font-size:100px;"> About
 			<hr style="position:relative; left:-20px; top:200px;"
 				align="center" size="2px" width="100px" noshade>
-			<p class="text" style="position:relative; top:300px; width:75%; left:12.5%;">
-				hi i am discription of the project ha ha...
+			<p class="text" style="position:relative; top:300px; width:80%; left:13%;">
+			My first attempt to build and understand what a basic 
+			computer is and also a first step in the field of Computer Architecture :)
+			The project demonstrates what it takes for some design in the 
+			wild, to be called, a valid computer.<br><br>
 
+			It is a beginner friendly, turing complete, 8-bit programable computer with 
+			16-byte primary memory(RAM) and 16 possible machine instructions
+			in it's instruction set.
+			It features a single 8-bit bus for data transfer and two 8-bit 
+			general purpose registers.<br><br>
+
+			At the core of it's ALU lies a simple 8-bit ripple carry adder 
+			which allows the machine to perform basic arithmetics like addition and subtraction.<br>
+			As mentioned before, their are 16 possible machine instructions of which 11 are
+			implemented. Each instruction is 5 clock cycles long, 2 clock cycles for instruction 
+			fetch and 3 for actual execution of the instruction.<br><br><br>
+
+			<strong>A detailed documentation and block diagram is available over at github.
+				Check it out if you are interested.</strong>
 
 		<div id="upstreamlink">
 			<h1 style="position:relative; font-size:50px; left:160px; top:-15px;"> 

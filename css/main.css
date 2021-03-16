@@ -130,6 +130,19 @@
 				animation-iteration-count:infinite;
 			}
 
+			#floating-contact{
+				z-index:3;
+				position:fixed;
+				bottom:7%;
+				right:8%; 
+			 	width:120px;
+				height:120px;
+				border-radius:10em;
+			 	background:#79fabe;
+				visibility:hidden;
+				box-shadow: 0 20px 30px 0 rgba(0,0,0,0.3);
+			}
+
 /*			@keyframes contactanime{
 				0% {
 				opacity:1;}
