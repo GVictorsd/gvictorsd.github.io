@@ -155,6 +155,12 @@
 				}
 			}
 */
+			.githubActiv{
+				visibility: visible;
+			}
+			#gitpocket:hover + .githubActiv{
+				visibility: visible;
+			}
 
 			.card:hover{
 				box-shadow: 0 100px 100px 0 rgba(0,0,0,0.2);
@@ -216,6 +222,20 @@
 				border-bottom:10px solid lightblue;
 			}
 
+			@keyframes activity_anime{
+				0%{
+					transform:rotate(0deg);
+				}
+				5%{
+					transform:rotate(10deg);
+				}
+				10%{
+					transform:rotate(-10deg);
+				}
+				15%{
+					transform:rotate(0deg);
+				}
+			}
 			@keyframes anime1{
 				0% {background-color: #00ffff; left:-4em; top:-3em; opacity:0;}
 				50% {background-color: #8000ff; left:-2.3em; top:-1.5em; transform:rotate(180deg); opacity:1;}
