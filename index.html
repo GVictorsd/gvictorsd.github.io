@@ -1,3 +1,15 @@
+
+<!--***************************************************************
+*
+Got this vibrant colorScheme and it's implementation from
+https://github.com/argyleink/gui-challenges
+Thanks to the experienced developers who created and openSourced it.
+Got a cool theme for my website because of them :)
+*
+****************************************************************-->
+	
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -8,10 +20,12 @@
 		<meta name="viewport" content="width=device-width">
 		<title>G.Victor Swaroop</title>
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme.css">
+
 	</head>
 
 	<!-- Body -->
-	<body style="background: #f4f6f6 ;">
+	<body >
 		<!-- header image -->
 		<div id="header">
 			<img src="assets/header.png" alt="image" width=1500px >
@@ -26,6 +40,41 @@
 			 </div></a>
 
    		 <script src="script/main.js"></script>
+
+		 <!-- Theme Selector -->
+
+      <form style="z-index:2; width:500px; font-size:25px; display:flex; gap:1ch;" id="theme">
+        <div>
+          <input checked type="radio" id="auto" name="theme" value="auto">
+          <label for="auto">Auto</label>
+        </div>
+        <div>
+          <input type="radio" id="light" name="theme" value="light">
+          <label for="light">Light</label>
+        </div>
+        <div>
+          <input type="radio" id="dark" name="theme" value="dark">
+          <label for="dark">Dark</label>
+        </div>
+        <div>
+          <input type="radio" id="dim" name="theme" value="dim">
+          <label for="dim">Dim</label>
+        </div>
+      </form>
+
+	  <!-- Script for theme -->
+	<script>
+const switcher = document.getElementById('theme')
+
+switcher.addEventListener('input', e =>
+  setTheme(e.target.value));
+
+const doc = document.firstElementChild;
+const setTheme = theme =>
+  doc.setAttribute('color-scheme', theme);
+	</script>
+	<!--/Theme selector -->
+
 
 		<div id="contactMe" style="z-index:2;
 				position:absolute;
@@ -114,72 +163,72 @@
 				align="center" size="2px" width="100px" noshade>
 
 			<!-- Skills field Atributes-->
-			<div style="
+			<div class="surface2 rad-shadow" style="
 				z-index:2;position:relative;
-				background:white; top:0.1em; left:3.8em;
+				top:0.1em; left:3.8em;
 				background-image: linear-gradient(to bottom right, #f39c12, rgba(255,0,0,0));
 				border-radius:100%;width:1em; height:1em;">
 				<p style="position:relative; font-family:San-sarif;
 					left:30px;font-size:70px;height:0em;">C</p>
 
-			<div style="
+			<div class="surface3 rad-shadow" style="
 				z-index:2;position:relative;
-				background:white; top:0.3em; left:-1.7em;
+				top:0.3em; left:-1.7em;
 				background-image: linear-gradient(to bottom right,#00FF00,rgba(255,0,0,0));
 				border-radius:100%;width:1.3em; height:1.3em;">
 				<p style="position:relative; font-family:San-sarif;
 					left:10px; top:10px;font-size:60px;height:0em;">C++</p>
-			<div style="
+			<div class="surface3 rad-shadow" style="
 				z-index:2;position:relative;
-				background:white;top:-0.45em; left:3.3em;
+				top:-0.45em; left:3.3em;
 				background-image: linear-gradient(to bottom right,#6495ED,rgba(255,0,0,0));
 				border-radius:100%;width:1.3em;height:1.3em;">
 				<p style="position:relative;left:0px; font-family:San-sarif;
 					font-size:45px; top:20px; height:0em;">Python</p>
 
-			<div style="
+			<div class="surface2 rad-shadow" style="
 				z-index:2;position:relative;
-				background:white; top:0.6em; left:-4.9em;
+				top:0.6em; left:-4.9em;
 				background-image: linear-gradient(to bottom right, #8e44ad ,rgba(255,0,0,0));
 				border-radius:100%;width:1em; height:1em;">
 				<p style="position:relative;left:0px; font-family:San-sarif;
 					font-size:35px; top:0px; height:0em;">Matlab</p>
 
-			<div style="
+			<div class="surface4 rad-shadow" style="
 				z-index:2;position:relative;
-				background:white;top:-0.6em; left:3em;
+				top:-0.6em; left:3em;
 				background-image: linear-gradient(to bottom right,#FF00FF,rgba(255,0,0,0));
 				border-radius:100%;width:1.6em; height:1.6em;">
 				<p style="position:relative;left:10px; top:30px;
 					font-family:San-sarif; font-size:50px;height:0em;">Verilog</p>
 
-			<div style="
+			<div class="surface2 rad-shadow" style="
 				z-index:2;position:relative;
-				background:white; top:-0.2em; left:3.5em;
+				top:-0.2em; left:3.5em;
 				background-image: linear-gradient(to bottom right, #40E0D0, rgba(255,0,0,0));
 				border-radius:100%;width:1em; height:1em;">
 				<p style="position:relative;left:0px; top:0px;
 					font-family:San-sarif; font-size:40px;height:0em;">Html</p>
 
-			<div style="
+			<div class="surface3 rad-shadow" style="
 				z-index:2;position:relative;
-				background:white; top:0.4em; left:-5em;
+				top:0.4em; left:-5em;
 				background-image: linear-gradient(to bottom right, #40E0D0, rgba(255,0,0,0));
 				border-radius:100%;width:1.3em; height:1.3em;">
 				<p style="position:relative;left:10px; top:10px;
 					font-family:San-sarif; font-size:50px;height:0em;">Bash</p>
 
-			<div style="
+			<div class="surface3 rad-shadow" style="
 				z-index:2;position:relative;
-				background:white;top:-0.4em; left:3.2em;
+				top:-0.4em; left:3.2em;
 				background-image: linear-gradient(to bottom right,#DFFF00, rgba(255,0,0,0));
 				border-radius:100%;width:1.3em; height:1.3em;">
 				<p style="position:relative;left:30px; top:10px;
 					font-family:San-sarif; font-size:50px;height:0em;">Git</p>
 
-			<div style="
+			<div class="surface2 rad-shadow" style="
 				z-index:2;position:relative;
-				background:white; top:0.7em; left:-1.5em;
+				top:0.7em; left:-1.5em;
 				background-image: linear-gradient(to bottom right, #af7ac5 , rgba(255,0,0,0));
 				border-radius:100%;width:1em; height:1em;">
 				<p style="position:relative;left:10px; top:0px;
@@ -233,7 +282,7 @@
 			<hr style="position:relative;top:-0.3em;" align="center" size="2px" width="100px" noshade>
 
 			<!-- Title attributes-->
-			<div class="card">
+			<div class="card surface2">
 				<img style="position:relative;border-radius: 50px 50px 0 0;
 					left:6.3em; width:37%; top:1.5em; border-left:5px solid;
 					user-select: none; pointer-events:none;
@@ -245,8 +294,7 @@
 				</div>
 				<div style="position:relative; width:400px; height:75px; background:black;
 					top:-340px; left:130px; border-radius:150px;background-image: 
-					linear-gradient(to bottom right,#58d68d, white);
-					box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);">
+					linear-gradient(to bottom right,#58d68d,var(--surface4));">
 				<a href="p1.html">
 						<p style="position:relative; font-size:40px; top:-15px; left:60px;
 						font-family:Courier;font-weight:bold;"> View Project </a></p>
@@ -256,7 +304,7 @@
 
 			<br><br><br><br><br><br><br>
 
-			<div class="card">
+			<div class="card surface4">
 				<img style="position:relative; border-radius: 50px 0 0 50px; left:0em;
 					user-select: none; pointer-events:none;
 					width:46.1%; height:100%; top:0em;" src="assets/electronics.jpg" alt="pic">
@@ -267,16 +315,16 @@
 				</div>
 				<div style="position:relative; width:400px; height:75px; background:black;
 					top:-850px; left:700px; border-radius:150px;
-					background-image: linear-gradient(to bottom right,#5dade2, white);
+					background-image: linear-gradient(to bottom right,#5dade2, var(--surface4) );
 					box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);">
 					<a href="p2.html">
-						<p style="position:relative; font-size:40px; top:-30px; left:60px;
+						<p style="position:relative; font-size:40px; top:-15px; left:60px;
 							font-family:Courier;font-weight:bold; "> View Project </a></p>
 				</div>
 			</div>
 
 			<br><br><br><br><br><br><br>
-			<div class="card">
+			<div class="card surface4">
 				<img style="position:relative; border-radius: 0 50px 50px 0; left:690px;
 					user-select: none; pointer-events:none;
 					width:46.1%; height:100%; top:0em;" src="assets/communication.webp" alt="pic">
@@ -287,7 +335,7 @@
 				</div>
 				<div style="position:relative; width:400px; height:75px; background:black;
 					top:-740px; left:130px; border-radius:150px;background-image:
-					linear-gradient(to bottom right, #f5b041 , white);
+					linear-gradient(to bottom right, #f5b041 , var(--surface4) );
 					box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);">
 					<a href="p3.html">
 						<p style="position:relative; font-size:40px; top:-15px; left:60px;
@@ -304,7 +352,7 @@
 				<hr style="position:relative;top:-0.3em; left:20%;" align="center" size="2px" width="100px" noshade>
 				</div>
 
-				<div id="gitpocket" style="position:absolute; top:6800px; left:190px; width:400px; height:300px;
+				<div class="surface4" id="gitpocket" style="position:absolute; top:6800px; left:190px; width:400px; height:300px;
 					box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.9);
 					border-radius:40px 40px 40px 40px;
 					border-top:10px solid black;
@@ -320,10 +368,11 @@
 								border-right:2px solid black;
 								border-left:2px solid black;">
 					<img class="githubActiv" style="position:relative; top:0px; height: 170px;"
-						src="http://ghchart.rshah.org/17A2B8/gvictorsd" alt="github-chart" >
+						src="" alt="github-chart" >
+						<!-- http://ghchart.rshah.org/17A2B8/gvictorsd -->
 					</div>
 					<a href="#gitpocket" id="close">
-					<div style="z-index:4; position:relative; left:200px;">
+					<div style="z-index:4; position:relative; left:200px; font-size:60px;">
 						&times;
 					</div></a>
 
