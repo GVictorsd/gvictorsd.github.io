@@ -6,7 +6,15 @@
 		<meta charset="UTF-8">
 		<title>Hamming Codes</title>
 		<link rel="stylesheet" href="css/p3.css">
+		<link rel="stylesheet" href="css/theme.css">
 	</head>
+
+	<script>
+		// set current theme..
+		const doc = document.firstElementChild;
+		let storedTheme = localStorage.getItem('storedTheme');
+		doc.setAttribute('color-scheme', storedTheme);
+	</script>
 
 	<body>
 		<div id="topleft" >

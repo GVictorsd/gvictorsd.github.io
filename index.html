@@ -39,9 +39,8 @@ Got a cool theme for my website because of them :)
 				 <img style="position:relative; top:15px; left:15px;" src="assets/contacts.webp" alt="contact icon" width=90px >
 			 </div></a>
 
-   		 <script src="script/main.js"></script>
 
-		 <!-- Theme Selector -->
+	 <!-- Theme Selector -->
 
       <form style="z-index:2; width:500px; font-size:25px; display:flex; gap:1ch;" id="theme">
         <div>
@@ -63,18 +62,7 @@ Got a cool theme for my website because of them :)
       </form>
 
 	  <!-- Script for theme -->
-	<script>
-const switcher = document.getElementById('theme')
-
-switcher.addEventListener('input', e =>
-  setTheme(e.target.value));
-
-const doc = document.firstElementChild;
-const setTheme = theme =>
-  doc.setAttribute('color-scheme', theme);
-	</script>
 	<!--/Theme selector -->
-
 
 		<div id="contactMe" style="z-index:2;
 				position:absolute;
@@ -141,7 +129,7 @@ const setTheme = theme =>
 					I'm persuing a degree in Electronics and 
 					Communication Engineering and am expected to graduate by 2023,
 					hopefully (^-^). I'm a proud GNU/Linux 
-					<span style="background:#dbdbdb; border-radius:10px;">/usr</span> and a 
+					<span style="background:var(--surface3); border-radius:10px;">/usr</span> and a 
 					fan of OpenSource.
 					I've recently been into some low-level computer stuff like 
 					exploring how a few good old Microprocessors work.<br><br>
@@ -282,7 +270,7 @@ const setTheme = theme =>
 			<hr style="position:relative;top:-0.3em;" align="center" size="2px" width="100px" noshade>
 
 			<!-- Title attributes-->
-			<div class="card surface2">
+			<div class="card surface4">
 				<img style="position:relative;border-radius: 50px 50px 0 0;
 					left:6.3em; width:37%; top:1.5em; border-left:5px solid;
 					user-select: none; pointer-events:none;
@@ -353,12 +341,12 @@ const setTheme = theme =>
 				</div>
 
 				<div class="surface4" id="gitpocket" style="position:absolute; top:6800px; left:190px; width:400px; height:300px;
-					box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.9);
+					box-shadow: 10px 10px 10px 10px var(--brand);
 					border-radius:40px 40px 40px 40px;
-					border-top:10px solid black;
-					border-bottom:10px solid black;
-					border-left: 3px solid black;
-					border-right: 3px solid black;">
+					border-top:10px solid var(--text1);
+					border-bottom:10px solid var(--text1);
+					border-left: 3px solid var(--text2);
+					border-right: 3px solid var(--text2);">
 					<a href="#git-chart">
 					<img style="position:relative; left:50px;"src="assets/octocat_icn.png" alt="octocat">
 					</a>
@@ -372,7 +360,7 @@ const setTheme = theme =>
 						<!-- http://ghchart.rshah.org/17A2B8/gvictorsd -->
 					</div>
 					<a href="#gitpocket" id="close">
-					<div style="z-index:4; position:relative; left:200px; font-size:45px;">
+					<div style="z-index:4; position:relative; left:200px; font-size:100px;">
 						&times;
 					</div></a>
 
@@ -388,6 +376,8 @@ const setTheme = theme =>
 				transform:rotate(180deg); left:-50px;" src="assets/header.png" alt="image" width=1500px >
 		</div>
 		</footer>
+
+   		 <script src="script/main.js"></script>
 
 	</body>
 </html>

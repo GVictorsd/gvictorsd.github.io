@@ -120,10 +120,10 @@ a:visited{
 .subheadings{
 	z-index:2;
 	position:relative;
+	color: var(--text1);
 	font-size:90px;
 	text-align:center;
 	width:100%;
-	color:blue;
 	height:140px;
 	font-family:"perpetua";
 }

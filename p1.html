@@ -6,11 +6,19 @@
 		<meta charset="UTF-8">
 		<title>Mos6502</title>
 		<link rel="stylesheet" href="css/p1.css">
+		<link rel="stylesheet" href="css/theme.css">
 	</head>
 
+	<script>
+		// set current theme..
+		const doc = document.firstElementChild;
+		let storedTheme = localStorage.getItem('storedTheme');
+		doc.setAttribute('color-scheme', storedTheme);
+	</script>
+
 	<body>
-		<div id="topleft" >
-			<h1 style="font-size:75px; text-align:center; color:white;"> MOS 6502 </h1>
+		<div class="brand" id="topleft" >
+			<h1 style="font-size:75px; text-align:center;"> MOS 6502 </h1>
 		</div>
 
 		<div id="topRight" >
