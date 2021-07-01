@@ -1,6 +1,7 @@
+
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 	<head>
 		<meta charset="UTF-8">
@@ -9,14 +10,44 @@
 		<link rel="stylesheet" href="css/theme.css">
 	</head>
 
-	<script>
-		// set current theme..
-		const doc = document.firstElementChild;
-		let storedTheme = localStorage.getItem('storedTheme');
-		doc.setAttribute('color-scheme', storedTheme);
-	</script>
 
 	<body>
+
+		<!-- Theme switches -->
+      <form style="z-index:2; margin:20px 0 0 0; font-size:25px; display:flex; gap:1ch;" id="theme">
+
+        <div class="switch" data-tooltip="Auto" style="position:fixed; left:25px;" >
+          <input checked type="radio" id="auto" name="theme" value="auto">
+		  <div class="themeText" style="background: #ff8a80; box-shadow: 5px 5px 10px 0 var(--text2)">
+			  <p style="margin:7px 7px 7px 10px; font-family:Cursive;" > A </p>
+		  </div>
+        </div>
+
+        <div class="switch" data-tooltip="Light" style="position:fixed; left:100px;" >
+          <input type="radio" id="light" name="theme" value="light">
+		  <div class="themeText" style=" background: #ce93d8; box-shadow: 5px 5px 10px 0 var(--text2)">
+			  <p style="margin:7px 7px 7px 10px; font-family:Cursive;" > L </p>
+		  </div>
+        </div>
+
+        <div class="switch" data-tooltip="Dark" style="position:fixed; left:150px;" >
+          <input type="radio" id="dark" name="theme" value="dark">
+		  <div class="themeText" style="background: #80d8ff; box-shadow: 5px 5px 10px 0 var(--text2)">
+			  <p style="margin:7px 7px 7px 10px; font-family:Cursive;" > D </p>
+		  </div>
+        </div>
+
+        <div class="switch" data-tooltip="Dim" style="position:fixed; left:200px;" >
+          <input type="radio" id="dim" name="theme" value="dim">
+		  <div class="themeText" style="background: #1e88e5; box-shadow: 5px 5px 10px 0 var(--text2)">
+			  <p style="margin:7px 7px 7px 10px; font-family:Cursive;" > G </p>
+		  </div>
+        </div>
+      </form>
+
+	  <!-- Theme switches -->
+
+
 		<div class="brand" id="topleft" >
 			<h1 style="font-size:75px; text-align:center;"> MOS 6502 </h1>
 		</div>
@@ -61,5 +92,10 @@
 <!--
 		<div style="position:absolute; top:150em; background:black; width:300px; height:200px;"></div>
 -->
+
+	<!-- Theme script -->
+	 <script src="script/theme.js"></script>
+
+
 	</body>
 </html>

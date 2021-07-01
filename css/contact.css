@@ -7,7 +7,6 @@ body{
 
 	overflow-x: hidden;
 	max-width: 100%;
-	background: #b3e3e6;
 }
 @media screen and (max-width: 667px) {
 	body{
@@ -22,14 +21,16 @@ a:link{
 }
 
 .icon{
-	transition: transform 1s;
+	transition: transform 0.25s;
+	filter: drop-shadow(2px 4px 8px var(--text1));
 }
 .icon:hover{
-	transform: scale(1.2) rotate(10deg);
+	transform: scale(1.2);
+	filter: drop-shadow(4px 8px 16px var(--text1));
 }
 
 #header{
-	background-image: linear-gradient(to top right,#33CCFF, #FF00CC,#CC0099, #660099, #330066 );
+	background-image: linear-gradient(to top right,var(--surface4),#26c6da, #ce93d8, #ce93d8);
 	position: absolute;
 	top: -10px;
 	left: -10px;

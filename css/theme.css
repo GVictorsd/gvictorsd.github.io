@@ -232,3 +232,54 @@ form {
     0 100px 80px hsl(var(--surface-shadow) / var(--shadow-strength))
   ;
 }
+
+#theme input{
+	z-index:3;
+	position:absolute;
+	top:0;
+	left:0;
+	height:40px;
+	width:40px;
+	opacity:0;
+	cursor:pointer;
+}
+
+.themeText {
+	color: black;
+	top:0;
+	left:0;
+	height:40px;
+	width:40px;
+	border-radius:50%; 
+}
+
+
+.switch:before {
+	content: attr(data-tooltip);
+	position: absolute;
+	background-color: var(--surface4);
+	color: var(--text2);
+	text-align: center;
+	border-radius: 10px;
+	z-index: 3;
+	left: 60px;
+	top: -20px;
+	transition: opacity .6s;
+	margin-left: -60px;
+	font-size: 20px;
+	visibility: hidden;
+}
+
+.switch:after {
+	content: "";
+	position: absolute;
+	opacity: 0;
+	transition: opacity .6s;
+	visibility: hidden;
+}
+
+.switch:hover:before,
+.switch:hover:after {
+	opacity: 1;
+	visibility: visible;
+}

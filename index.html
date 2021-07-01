@@ -42,26 +42,37 @@ Got a cool theme for my website because of them :)
 
 	 <!-- Theme Selector -->
 
-      <form style="z-index:2; width:500px; font-size:25px; display:flex; gap:1ch;" id="theme">
-        <div>
+      <form style="z-index:6; margin:20px 0 0 0; font-size:25px; display:flex; gap:1ch;" id="theme">
+
+        <div class="switch" data-tooltip="Auto" style="position:fixed; left:25px;" >
           <input checked type="radio" id="auto" name="theme" value="auto">
-          <label for="auto">Auto</label>
+		  <div class="themeText" style="background: #ff8a80; box-shadow: 5px 5px 10px 0 var(--text2)">
+			  <p style="margin:7px 7px 7px 10px; font-family:Cursive;" > A </p>
+		  </div>
         </div>
-        <div>
+
+        <div class="switch" data-tooltip="Light" style="position:fixed; left:100px;" >
           <input type="radio" id="light" name="theme" value="light">
-          <label for="light">Light</label>
+		  <div class="themeText" style=" background: #ce93d8; box-shadow: 5px 5px 10px 0 var(--text2)">
+			  <p style="margin:7px 7px 7px 10px; font-family:Cursive;" > L </p>
+		  </div>
         </div>
-        <div>
+
+        <div class="switch" data-tooltip="Dark" style="position:fixed; left:150px;" >
           <input type="radio" id="dark" name="theme" value="dark">
-          <label for="dark">Dark</label>
+		  <div class="themeText" style="background: #80d8ff; box-shadow: 5px 5px 10px 0 var(--text2)">
+			  <p style="margin:7px 7px 7px 10px; font-family:Cursive;" > D </p>
+		  </div>
         </div>
-        <div>
+
+        <div class="switch" data-tooltip="Dim" style="position:fixed; left:200px;" >
           <input type="radio" id="dim" name="theme" value="dim">
-          <label for="dim">Dim</label>
+		  <div class="themeText" style="background: #1e88e5; box-shadow: 5px 5px 10px 0 var(--text2)">
+			  <p style="margin:7px 7px 7px 10px; font-family:Cursive;" > G </p>
+		  </div>
         </div>
       </form>
 
-	  <!-- Script for theme -->
 	<!--/Theme selector -->
 
 		<div id="contactMe" style="z-index:2;
@@ -377,7 +388,9 @@ Got a cool theme for my website because of them :)
 		</div>
 		</footer>
 
-   		 <script src="script/main.js"></script>
+		<!-- Theme script -->
+   		 <script src="script/theme.js"></script>
+		 <script src="script/main.js"></script>
 
 	</body>
 </html>
