@@ -45,6 +45,7 @@ a:link{
 	left: 200px;
 	transform:rotate(-20deg);
 	opacity:1;
+	filter: sepia(100%);
 }
 
 

@@ -257,15 +257,16 @@ form {
 .switch:before {
 	content: attr(data-tooltip);
 	position: absolute;
-	background-color: var(--surface4);
-	color: var(--text2);
+	background-color: var(--surface3);
+	color: var(--text1);
 	text-align: center;
-	border-radius: 10px;
+	border-radius: 5px;
 	z-index: 3;
 	left: 60px;
 	top: -20px;
 	transition: opacity .6s;
 	margin-left: -60px;
+	font-family: San-Serif;
 	font-size: 20px;
 	visibility: hidden;
 }

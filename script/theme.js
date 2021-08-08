@@ -15,8 +15,8 @@ const setTheme = theme => {
 	if(storedTheme == null){
 		// if theme was not stored previously
 		// store and apply
-		localStorage.setItem('storedTheme', 'auto');
-		doc.setAttribute('color-scheme', 'auto');
+		localStorage.setItem('storedTheme', theme);
+		doc.setAttribute('color-scheme', theme);
 	}else{
 		// else apply the found theme...
 		localStorage.setItem('storedTheme', theme);
